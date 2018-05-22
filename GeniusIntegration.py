@@ -12,7 +12,7 @@ api = genius.Genius('Qih5w0Q_T8lDHa4TKLKHyjrsnWfq49zkakiOp_W-dwZ1BoQ_PFdnkMFHSKu
 
 filename = 'rapworldmap-artists.json' # Can be changed during save as
 
-MAX_NUM_OF_SONGS = 15 # maximum number of songs to be looked at
+MAX_NUM_OF_SONGS = 30 # maximum number of songs to be looked at
 
 with open(filename, 'r', encoding='UTF-8') as f: # open up the file
 
@@ -20,7 +20,7 @@ with open(filename, 'r', encoding='UTF-8') as f: # open up the file
 
 for rapper in json_data: 
     data = {'name' : rapper['name'], 'coordinates' : rapper['location']['coordinates']} # pull only the important data 
-    if float(rapper['location']['coordinates'].split(',')[0]) > -30:
+    if float(rapper['location']['coordinates'].split(',')[0]) > -30: #limit to the Americas
     	pass
     else:
         try: 
