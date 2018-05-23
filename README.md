@@ -1,6 +1,6 @@
 # region_by_lyric
 Project to take rap lyrics and convert them to an area
 
-1. Create web scraper for lyric data
-2. Create web scraper for location data
-3. Build neural network to go lyric data -> region
+1. Create web scraper for lyric data # done! see GeniusIntegration.py
+2. Create web scraper for location data # ended up not being necessary, data already available at http://rapworldmap.com
+3. Build neural network to go lyric data -> region #WIP: Data reformating complete, need to write ML code and train model
