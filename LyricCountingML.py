@@ -93,7 +93,6 @@ def preprocess_targets(rap_lyrics_dataframe):
     A DataFrame that contains the target features.
   """
     output_targets = pd.DataFrame()
-  # Scale the target to be in units of thousands of dollars.
     output_targets["longitude"] = (
         rap_lyrics_dataframe["longitude"])
     output_targets["latitude"] = (
